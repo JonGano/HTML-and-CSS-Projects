@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Basic html 5</title>
+		<meta charset="utf-8">
+	</head>
+	<link rel= "stylesheet" type= "text/css" href= "Basic_CSS_2.css">
+	<body>
+	<p>This is the style css told us to show this text in</p>
+	<h3>&amp; this is what the normal text looks like</h3>
+	</body>
+</html>
