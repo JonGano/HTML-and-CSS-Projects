@@ -61,6 +61,11 @@ SELECT ALL SQUARES IN THE ARRAY
 ------------------------------------------------------*/
 .container .squares:nth-child(-n+4):hover {
    background-image: url("../images/icons/icons2.png");
+   transform: scale(.5);
+   animation-name: race;
+   animation-duration: 2.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: cubic-bezier(2.5,.2,.3,2);
     }
     .squares:nth-child(1):hover {
         background: #13b4ff;
@@ -75,4 +80,21 @@ SELECT ALL SQUARES IN THE ARRAY
         background: #77b800;
     }
 
-    
+    .button:hover {
+        background-color: #33fb14;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    /*-------------------------------------------------
+              ANIMATION EFFECTS
+    --------------------------------------------------*/
+    @keyframes race {
+        0%, 100% {
+        transform: translateY(0px);
+        background-image: url("../images/icons/icons2.png")
+    }
+    50% {
+        transform: translateY(330px);
+    }
+}
