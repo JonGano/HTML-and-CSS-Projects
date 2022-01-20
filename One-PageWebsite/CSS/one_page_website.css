@@ -1,0 +1,70 @@
+
+.home {
+    font-family:Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align:center;
+}
+
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
+
+.logo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border:1px solid #021a40;
+    background-color: rgb(7, 64, 189);
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7);
+}
+.photo {
+        background-color: rgb(149, 214, 240);
+        text-align: center;
+        position: relative;
+        line-height: 0;
+        margin-bottom: 2em;
+        overflow: hidden;
+        border-radius: 8px;
+        padding: 1px;
+        border:1px solid #021a40;
+}
+
+.contacts {
+    padding: auto;
+    padding-bottom: 100px;
+    background-color: rgb(74, 24, 211);
+
+}
+
+h2 {
+    text-align: center;
+    font-size:x-large;
+}
+p {
+    text-align: center;
+}
+
+.form-spacer {
+    padding: 25px 40px;
+}
+.contacts input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color:cornsilk;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #ced1d6;
+    border-right:  2px solid #4e5053;
+    border-bottom: 2px solid #67686b;
+    border-left: 1px solid #bfc7d3;
+    margin: 20px 2em;
+    border-radius: 7px;
+    background: rgb(99, 95, 95);
+    box-shadow: inset 0px 3px 10px 10px #021a40;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
