@@ -14,7 +14,7 @@
       <div class="container">
 
         
-        <nav class="navbar navbar-light bg-info">
+        <nav class="navbar navbar-light bg-info" style="position: fixed; z-index: 1; width: 100%">
           <form class="form-inline">
             <a href="#about" class="btn btn-outline-info btn-lg active bg-info" role="button" aria-pressed="true">About</a>
             <a href="#showtimes" class="btn btn-outline-info btn-lg active bg-info" role="button" aria-pressed="true">Showtimes</a>
@@ -67,17 +67,17 @@
             <div class="container">
               <h3>Showtimes:</h3>
               
-
+              <!---------------------Changed the <span> tags to <a> to give badges a hover effect---------------->
               <div class="card-deck">
                 <div class="card">
                   <img class="card-img-top" style="max-height: 200px;" src="./images/kongskullisland.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Kong: Skull Island</h5>
                     <p class="card-text">A team of scientist and ex-military search for the remains of the famous Kong.  But, can it be? Is this ancient creature really dead? Come see the giant legendary ape in scale!</p>
-                    <span class="badge badge-pill badge-primary"  style="margin-left: 24px;">12:20</span>
-                    <span class="badge badge-pill badge-primary"  style="margin-left: 24px;">3:00</span>
-                    <span class="badge badge-pill badge-primary"  style="margin-left: 24px;">5:40</span>
-                    <span class="badge badge-pill badge-primary"  style="margin-left: 24px;">9:15</span>
+                    <a href="#" class="badge badge-pill badge-primary" style="margin-left: 24px;">12:20</a>
+                    <a href="#" class="badge badge-pill badge-primary" style="margin-left: 24px;">3:00</a>
+                    <a href="#" class="badge badge-pill badge-primary" style="margin-left: 24px;">5:40</a>
+                    <a href="#" class="badge badge-pill badge-primary" style="margin-left: 24px;">9:15</a>
 
                   </div>
                 </div>
@@ -87,11 +87,11 @@
                     <h5 class="card-title">Ghost in the Shell</h5>
                     
                     <p class="card-text">Where paranormal meets basic human nature, things get chaotic as curiosity sends human experimentation off the rails.</p>
-                    <span class="badge badge-pill badge-primary"  style="margin-left: 24px;">12:10</span>
-                    <span class="badge badge-pill badge-primary"  style="margin-left: 24px;">3:15</span>
-                    <span class="badge badge-pill badge-primary"  style="margin-left: 24px;">5:55</span>
-                    <span class="badge badge-pill badge-primary"  style="margin-left: 24px;">9:25</span>
-
+                    <a href="#" class="badge badge-pill badge-primary" style="margin-left: 24px;">12:10</a>
+                    <a href="#" class="badge badge-pill badge-primary" style="margin-left: 24px;">3:15</a>
+                    <a href="#" class="badge badge-pill badge-primary" style="margin-left: 24px;">5:55</a>
+                    <a href="#" class="badge badge-pill badge-primary" style="margin-left: 24px;">9:25</a>
+                  
                   </div>
                 </div>
                 <div class="card height">
@@ -100,10 +100,10 @@
                     <h5 class="card-title">Beauty and the Beast</h5>
                     
                     <p class="card-text">Emma Watson shines as the oddball protagonist of this retold childhood story. Two thumbs up by Roger Ebert!</p>
-                    <span class="badge badge-pill badge-primary" style="margin-left: 24px;">12:30</span>
-                    <span class="badge badge-pill badge-primary" style="margin-left: 24px;">3:10</span>
-                    <span class="badge badge-pill badge-primary" style="margin-left: 24px;">5:35</span>
-                    <span class="badge badge-pill badge-primary" style="margin-left: 24px;">8:55</span>
+                    <a href="#" class="badge badge-pill badge-primary" style="margin-left: 24px;">12:30</a>
+                    <a href="#" class="badge badge-pill badge-primary" style="margin-left: 24px;">3:10</a>
+                    <a href="#" class="badge badge-pill badge-primary" style="margin-left: 24px;">5:35</a>
+                    <a href="#" class="badge badge-pill badge-primary" style="margin-left: 24px;">8:55</a>
 
                   </div>
                 </div>
@@ -117,15 +117,75 @@
           </div>
 <!-------------------/Showtimes--------------------->
 
-              <div class="text-center">
+<!---------------Deals------------------------------->
+<!----------jumbotron heading----------------->
+          <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+              <div class="container">
+                <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">
+                Movie Deals</h1>
+                <p class="lead">Check out our monthly deals...</p>
+                <!-----movie deals-->
+                <button type="button" class="btn-primary btn-outline-primary text-light" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+                <!-------/Movie deals-------><!----------Added "btn-primary" instead of "btn" to beginning of class to make the button stand out more-------->
+              </div>                                <!-------changed button to give it a popover -->
+          </div>
+          <!--------/jumbotron------->
+            
+            
+            
+            
+            <div class="text-center">
                   <form id="deals">
                     <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
                     <div class="form-group">
                       <input type="email" class="form-control"  style="max-width: 500px; margin-left: auto; margin-right: auto;"  id="exampleInputEmail1"  aria-describedby="emailHelp" placeholder="Enter email">                  
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to recieve great movie reward deals!">
+                      Sign up!            
+                    </button>
                   </form>
               </div>
+
+              <!---------Form modal-------->
+              <div class="modal" tabindex="-1" role="dialog" id="register">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">     <!----added modal for the popover button above-->
+                    <div class="modal-header">
+                      <h5 class="modal-title">Register to recieve movie deals</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      
+                      <form>      <!--this modal displays an info form for the user to fill out-->
+                        <fieldset class="form-group">
+                          <label for="firstname">First Name:</label>
+                          <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email...">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password...">
+                        </fieldset>
+                      </form>
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!---------/Form modal------->
      
               <div class="container my-5">
                 <ul class="nav nav-inline">
@@ -152,10 +212,18 @@
      
       </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+
+  
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+  $('.popover-dismiss').popover({
+   trigger: 'focus'
+})
+</script>
+
+</body>
 </html>
